@@ -1,0 +1,14 @@
+H:\Proyectos\Parking\CapaPresentación\bin\Debug\CapaPresentación.exe.config
+H:\Proyectos\Parking\CapaPresentación\bin\Debug\CapaPresentación.exe
+H:\Proyectos\Parking\CapaPresentación\bin\Debug\CapaPresentación.pdb
+H:\Proyectos\Parking\CapaPresentación\bin\Debug\FontAwesome.Sharp.dll
+H:\Proyectos\Parking\CapaPresentación\obj\Debug\CapaPresentación.Properties.Resources.resources
+H:\Proyectos\Parking\CapaPresentación\obj\Debug\CapaPresentación.csproj.GenerateResource.cache
+H:\Proyectos\Parking\CapaPresentación\obj\Debug\CapaPresentación.csproj.CoreCompileInputs.cache
+H:\Proyectos\Parking\CapaPresentación\obj\Debug\CapaPresentación.csproj.CopyComplete
+H:\Proyectos\Parking\CapaPresentación\obj\Debug\CapaPresentación.exe
+H:\Proyectos\Parking\CapaPresentación\obj\Debug\CapaPresentación.pdb
+H:\Proyectos\Parking\CapaPresentación\obj\Debug\CapaPresentación.formAuto.resources
+H:\Proyectos\Parking\CapaPresentación\obj\Debug\CapaPresentación.FormArchivos.resources
+H:\Proyectos\Parking\CapaPresentación\obj\Debug\CapaPresentación.FormRegistrar.resources
+H:\Proyectos\Parking\CapaPresentación\obj\Debug\CapaPresentación.csprojAssemblyReference.cache
