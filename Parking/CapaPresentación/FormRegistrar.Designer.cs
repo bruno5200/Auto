@@ -30,29 +30,29 @@ namespace CapaPresentación
         private void InitializeComponent()
         {
             this.pnlAuto = new System.Windows.Forms.Panel();
-            this.pnlContenido = new System.Windows.Forms.Panel();
-            this.pibAuto = new System.Windows.Forms.PictureBox();
+            this.btnEditarPlaca = new FontAwesome.Sharp.IconButton();
             this.lblPlaca = new System.Windows.Forms.Label();
+            this.pibAuto = new System.Windows.Forms.PictureBox();
+            this.pnlContenido = new System.Windows.Forms.Panel();
+            this.lblUser = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtPlaca = new System.Windows.Forms.TextBox();
             this.btnGuardarVehiculo = new System.Windows.Forms.Button();
+            this.lblMatricula = new System.Windows.Forms.Label();
             this.btnGuardarUsuario = new System.Windows.Forms.Button();
-            this.lblName = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.lblCI = new System.Windows.Forms.Label();
-            this.txtCI = new System.Windows.Forms.TextBox();
-            this.txtMarca = new System.Windows.Forms.TextBox();
-            this.lbl = new System.Windows.Forms.Label();
-            this.txtTipo = new System.Windows.Forms.TextBox();
-            this.lblTipo = new System.Windows.Forms.Label();
             this.txtColor = new System.Windows.Forms.TextBox();
             this.lblColor = new System.Windows.Forms.Label();
-            this.txtPlaca = new System.Windows.Forms.TextBox();
-            this.lblMatricula = new System.Windows.Forms.Label();
-            this.btnEditarPlaca = new FontAwesome.Sharp.IconButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblUser = new System.Windows.Forms.Label();
+            this.txtTipo = new System.Windows.Forms.TextBox();
+            this.lblTipo = new System.Windows.Forms.Label();
+            this.txtMarca = new System.Windows.Forms.TextBox();
+            this.lbl = new System.Windows.Forms.Label();
+            this.txtCI = new System.Windows.Forms.TextBox();
+            this.lblCI = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.lblName = new System.Windows.Forms.Label();
             this.pnlAuto.SuspendLayout();
-            this.pnlContenido.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pibAuto)).BeginInit();
+            this.pnlContenido.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlAuto
@@ -66,6 +66,45 @@ namespace CapaPresentación
             this.pnlAuto.Name = "pnlAuto";
             this.pnlAuto.Size = new System.Drawing.Size(615, 630);
             this.pnlAuto.TabIndex = 0;
+            // 
+            // btnEditarPlaca
+            // 
+            this.btnEditarPlaca.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnEditarPlaca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.btnEditarPlaca.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditarPlaca.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditarPlaca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditarPlaca.IconChar = FontAwesome.Sharp.IconChar.Edit;
+            this.btnEditarPlaca.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnEditarPlaca.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEditarPlaca.Location = new System.Drawing.Point(345, 563);
+            this.btnEditarPlaca.Name = "btnEditarPlaca";
+            this.btnEditarPlaca.Size = new System.Drawing.Size(36, 36);
+            this.btnEditarPlaca.TabIndex = 7;
+            this.btnEditarPlaca.UseVisualStyleBackColor = false;
+            this.btnEditarPlaca.Click += new System.EventHandler(this.btnEditarPlaca_Click);
+            // 
+            // lblPlaca
+            // 
+            this.lblPlaca.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblPlaca.AutoSize = true;
+            this.lblPlaca.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlaca.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblPlaca.Location = new System.Drawing.Point(230, 563);
+            this.lblPlaca.Name = "lblPlaca";
+            this.lblPlaca.Size = new System.Drawing.Size(109, 36);
+            this.lblPlaca.TabIndex = 1;
+            this.lblPlaca.Text = "PLACA";
+            // 
+            // pibAuto
+            // 
+            this.pibAuto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pibAuto.BackColor = System.Drawing.Color.White;
+            this.pibAuto.Location = new System.Drawing.Point(12, 12);
+            this.pibAuto.Name = "pibAuto";
+            this.pibAuto.Size = new System.Drawing.Size(525, 525);
+            this.pibAuto.TabIndex = 0;
+            this.pibAuto.TabStop = false;
             // 
             // pnlContenido
             // 
@@ -92,27 +131,39 @@ namespace CapaPresentación
             this.pnlContenido.Size = new System.Drawing.Size(657, 630);
             this.pnlContenido.TabIndex = 1;
             // 
-            // pibAuto
+            // lblUser
             // 
-            this.pibAuto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pibAuto.BackColor = System.Drawing.Color.White;
-            this.pibAuto.Location = new System.Drawing.Point(12, 12);
-            this.pibAuto.Name = "pibAuto";
-            this.pibAuto.Size = new System.Drawing.Size(525, 525);
-            this.pibAuto.TabIndex = 0;
-            this.pibAuto.TabStop = false;
+            this.lblUser.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblUser.AutoSize = true;
+            this.lblUser.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblUser.Location = new System.Drawing.Point(210, 30);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(236, 32);
+            this.lblUser.TabIndex = 18;
+            this.lblUser.Text = "Datos de Usuario";
             // 
-            // lblPlaca
+            // label3
             // 
-            this.lblPlaca.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblPlaca.AutoSize = true;
-            this.lblPlaca.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlaca.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblPlaca.Location = new System.Drawing.Point(230, 563);
-            this.lblPlaca.Name = "lblPlaca";
-            this.lblPlaca.Size = new System.Drawing.Size(109, 36);
-            this.lblPlaca.TabIndex = 1;
-            this.lblPlaca.Text = "PLACA";
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label3.Location = new System.Drawing.Point(160, 269);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(336, 32);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Descripción del vehículo";
+            // 
+            // txtPlaca
+            // 
+            this.txtPlaca.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPlaca.Location = new System.Drawing.Point(353, 364);
+            this.txtPlaca.Multiline = true;
+            this.txtPlaca.Name = "txtPlaca";
+            this.txtPlaca.Size = new System.Drawing.Size(228, 20);
+            this.txtPlaca.TabIndex = 16;
+            this.txtPlaca.Visible = false;
             // 
             // btnGuardarVehiculo
             // 
@@ -129,6 +180,19 @@ namespace CapaPresentación
             this.btnGuardarVehiculo.Text = "Guardar Vehiculo";
             this.btnGuardarVehiculo.UseVisualStyleBackColor = true;
             // 
+            // lblMatricula
+            // 
+            this.lblMatricula.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblMatricula.AutoSize = true;
+            this.lblMatricula.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMatricula.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblMatricula.Location = new System.Drawing.Point(349, 338);
+            this.lblMatricula.Name = "lblMatricula";
+            this.lblMatricula.Size = new System.Drawing.Size(64, 23);
+            this.lblMatricula.TabIndex = 15;
+            this.lblMatricula.Text = "Placa";
+            this.lblMatricula.Visible = false;
+            // 
             // btnGuardarUsuario
             // 
             this.btnGuardarUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -143,90 +207,6 @@ namespace CapaPresentación
             this.btnGuardarUsuario.TabIndex = 5;
             this.btnGuardarUsuario.Text = "Guardar Usuario";
             this.btnGuardarUsuario.UseVisualStyleBackColor = true;
-            // 
-            // lblName
-            // 
-            this.lblName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblName.Location = new System.Drawing.Point(47, 88);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(85, 23);
-            this.lblName.TabIndex = 0;
-            this.lblName.Text = "Nombre";
-            // 
-            // txtName
-            // 
-            this.txtName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtName.Location = new System.Drawing.Point(51, 114);
-            this.txtName.Multiline = true;
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(228, 20);
-            this.txtName.TabIndex = 1;
-            // 
-            // lblCI
-            // 
-            this.lblCI.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCI.AutoSize = true;
-            this.lblCI.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCI.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblCI.Location = new System.Drawing.Point(47, 167);
-            this.lblCI.Name = "lblCI";
-            this.lblCI.Size = new System.Drawing.Size(216, 23);
-            this.lblCI.TabIndex = 2;
-            this.lblCI.Text = "Cedula de Indentidad";
-            // 
-            // txtCI
-            // 
-            this.txtCI.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCI.Location = new System.Drawing.Point(51, 193);
-            this.txtCI.Multiline = true;
-            this.txtCI.Name = "txtCI";
-            this.txtCI.Size = new System.Drawing.Size(228, 20);
-            this.txtCI.TabIndex = 3;
-            // 
-            // txtMarca
-            // 
-            this.txtMarca.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtMarca.Location = new System.Drawing.Point(51, 364);
-            this.txtMarca.Multiline = true;
-            this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(228, 20);
-            this.txtMarca.TabIndex = 8;
-            // 
-            // lbl
-            // 
-            this.lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl.AutoSize = true;
-            this.lbl.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbl.Location = new System.Drawing.Point(47, 338);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(71, 23);
-            this.lbl.TabIndex = 7;
-            this.lbl.Text = "Marca";
-            // 
-            // txtTipo
-            // 
-            this.txtTipo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTipo.Location = new System.Drawing.Point(51, 448);
-            this.txtTipo.Multiline = true;
-            this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(228, 20);
-            this.txtTipo.TabIndex = 10;
-            // 
-            // lblTipo
-            // 
-            this.lblTipo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblTipo.AutoSize = true;
-            this.lblTipo.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipo.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblTipo.Location = new System.Drawing.Point(47, 422);
-            this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(48, 23);
-            this.lblTipo.TabIndex = 9;
-            this.lblTipo.Text = "Tipo";
             // 
             // txtColor
             // 
@@ -250,68 +230,89 @@ namespace CapaPresentación
             this.lblColor.Text = "Color";
             this.lblColor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtPlaca
+            // txtTipo
             // 
-            this.txtPlaca.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtPlaca.Location = new System.Drawing.Point(353, 364);
-            this.txtPlaca.Multiline = true;
-            this.txtPlaca.Name = "txtPlaca";
-            this.txtPlaca.Size = new System.Drawing.Size(228, 20);
-            this.txtPlaca.TabIndex = 16;
-            this.txtPlaca.Visible = false;
+            this.txtTipo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTipo.Location = new System.Drawing.Point(51, 448);
+            this.txtTipo.Multiline = true;
+            this.txtTipo.Name = "txtTipo";
+            this.txtTipo.Size = new System.Drawing.Size(228, 20);
+            this.txtTipo.TabIndex = 10;
             // 
-            // lblMatricula
+            // lblTipo
             // 
-            this.lblMatricula.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblMatricula.AutoSize = true;
-            this.lblMatricula.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMatricula.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblMatricula.Location = new System.Drawing.Point(349, 338);
-            this.lblMatricula.Name = "lblMatricula";
-            this.lblMatricula.Size = new System.Drawing.Size(64, 23);
-            this.lblMatricula.TabIndex = 15;
-            this.lblMatricula.Text = "Placa";
-            this.lblMatricula.Visible = false;
+            this.lblTipo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTipo.AutoSize = true;
+            this.lblTipo.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipo.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblTipo.Location = new System.Drawing.Point(47, 422);
+            this.lblTipo.Name = "lblTipo";
+            this.lblTipo.Size = new System.Drawing.Size(48, 23);
+            this.lblTipo.TabIndex = 9;
+            this.lblTipo.Text = "Tipo";
             // 
-            // btnEditarPlaca
+            // txtMarca
             // 
-            this.btnEditarPlaca.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnEditarPlaca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.btnEditarPlaca.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.btnEditarPlaca.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.btnEditarPlaca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarPlaca.IconChar = FontAwesome.Sharp.IconChar.Edit;
-            this.btnEditarPlaca.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnEditarPlaca.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnEditarPlaca.Location = new System.Drawing.Point(345, 563);
-            this.btnEditarPlaca.Name = "btnEditarPlaca";
-            this.btnEditarPlaca.Size = new System.Drawing.Size(36, 36);
-            this.btnEditarPlaca.TabIndex = 7;
-            this.btnEditarPlaca.UseVisualStyleBackColor = false;
+            this.txtMarca.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtMarca.Location = new System.Drawing.Point(51, 364);
+            this.txtMarca.Multiline = true;
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(228, 20);
+            this.txtMarca.TabIndex = 8;
             // 
-            // label3
+            // lbl
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(160, 269);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(336, 32);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Descripción del vehículo";
+            this.lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl.AutoSize = true;
+            this.lbl.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbl.Location = new System.Drawing.Point(47, 338);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(71, 23);
+            this.lbl.TabIndex = 7;
+            this.lbl.Text = "Marca";
             // 
-            // lblUser
+            // txtCI
             // 
-            this.lblUser.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblUser.AutoSize = true;
-            this.lblUser.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblUser.Location = new System.Drawing.Point(210, 30);
-            this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(236, 32);
-            this.lblUser.TabIndex = 18;
-            this.lblUser.Text = "Datos de Usuario";
+            this.txtCI.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCI.Location = new System.Drawing.Point(51, 193);
+            this.txtCI.Multiline = true;
+            this.txtCI.Name = "txtCI";
+            this.txtCI.Size = new System.Drawing.Size(228, 20);
+            this.txtCI.TabIndex = 3;
+            // 
+            // lblCI
+            // 
+            this.lblCI.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCI.AutoSize = true;
+            this.lblCI.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCI.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblCI.Location = new System.Drawing.Point(47, 167);
+            this.lblCI.Name = "lblCI";
+            this.lblCI.Size = new System.Drawing.Size(216, 23);
+            this.lblCI.TabIndex = 2;
+            this.lblCI.Text = "Cedula de Indentidad";
+            // 
+            // txtName
+            // 
+            this.txtName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtName.Location = new System.Drawing.Point(51, 114);
+            this.txtName.Multiline = true;
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(228, 20);
+            this.txtName.TabIndex = 1;
+            // 
+            // lblName
+            // 
+            this.lblName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblName.Location = new System.Drawing.Point(47, 88);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(85, 23);
+            this.lblName.TabIndex = 0;
+            this.lblName.Text = "Nombre";
             // 
             // FormRegistrar
             // 
@@ -327,9 +328,9 @@ namespace CapaPresentación
             this.Text = "FormRegistrar";
             this.pnlAuto.ResumeLayout(false);
             this.pnlAuto.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pibAuto)).EndInit();
             this.pnlContenido.ResumeLayout(false);
             this.pnlContenido.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pibAuto)).EndInit();
             this.ResumeLayout(false);
 
         }

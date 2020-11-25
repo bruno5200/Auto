@@ -17,7 +17,7 @@ namespace CapaPresentación
         //Declaraciones
         private IconButton currentBtn;
         private Panel leftBorderBtn;
-        private Form currentChildForm;
+        private Form formulario;
 
         //Constructor
         public formAuto()
@@ -84,9 +84,7 @@ namespace CapaPresentación
         }
         private void AbrirFormulario<MiForm>() where MiForm : Form, new()
         {
-            Form formulario;
             formulario = pnlContenedor.Controls.OfType<MiForm>().FirstOrDefault();//Busca en la colecion el formulario o si el formulario/instancia no existe
-                                                                                  
             if (formulario == null)
             {
                 formulario = new MiForm();
@@ -116,8 +114,7 @@ namespace CapaPresentación
         }
         private void pibSABSA_Click(object sender, EventArgs e)
         {
-            if (currentChildForm != null)
-                currentChildForm.Close();
+            formulario.Close();
             Reset();
         }
         private void Reset()
