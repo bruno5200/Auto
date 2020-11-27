@@ -10,37 +10,37 @@ using System.Linq;
 
 namespace ApiAuto.Controllers
 {
-    [Route("api/Auto")]
+    [Route("api/[controller]")]
     [ApiController]
-    public class AutoController : ControllerBase
+    public class UsuarioController : ControllerBase
     {
         private readonly AppBDContext context;
-        public AutoController(AppBDContext context)
+        public UsuarioController(AppBDContext context)
         {
             this.context = context;
         }
-        // GET: api/<AutoController>
+        // GET: api/<UsuarioController>
         [HttpGet]
-        public IEnumerable<Auto> Get()
+        public IEnumerable<Usuario> Get()
         {
-            return context.autos.ToList();
+            return context.usuarios.ToList();
         }
 
-        // GET api/<AutoController>/5
+        // GET api/<UsuarioController>/5
         [HttpGet("{id}")]
-        public Auto Get(long id)
+        public Usuario Get(long id)
         {
-            var auto = context.autos.FirstOrDefault(a => a.auto_id == id);
-            return auto;
+            var usuario = context.usuarios.FirstOrDefault(u => u.usuario_id == id);
+            return usuario;
         }
 
-        // POST api/<AutoController>
+        // POST api/<UsuarioController>
         [HttpPost]
-        public ActionResult Post([FromBody] Auto auto)
+        public ActionResult Post([FromBody] Usuario usuario)
         {
             try
             {
-                context.autos.Add(auto);
+                context.usuarios.Add(usuario);
                 context.SaveChanges();
                 return Ok();
             }
@@ -50,13 +50,13 @@ namespace ApiAuto.Controllers
             }
         }
 
-        // PUT api/<AutoController>/2
+        // PUT api/<UsuarioController>/5
         [HttpPut("{id}")]
-        public ActionResult Put(long id, [FromBody] Auto auto)
+        public ActionResult Put(long id, [FromBody] Usuario usuario)
         {
-            if (auto.auto_id == id)
+            if (usuario.usuario_id == id)
             {
-                context.Entry(auto).State = EntityState.Modified;
+                context.Entry(usuario).State = EntityState.Modified;
                 context.SaveChanges();
                 return Ok();
             }
@@ -64,14 +64,14 @@ namespace ApiAuto.Controllers
                 return BadRequest();
         }
 
-        // DELETE api/<AutoController>/5
+        // DELETE api/<UsuarioController>/5
         [HttpDelete("{id}")]
         public ActionResult Delete(long id)
         {
-            var auto = context.autos.FirstOrDefault(a => a.auto_id == id);
-            if (auto != null)
+            var usuario = context.usuarios.FirstOrDefault(u => u.usuario_id == id);
+            if (usuario != null)
             {
-                context.autos.Remove(auto);
+                context.usuarios.Remove(usuario);
                 context.SaveChanges();
                 return Ok();
             }

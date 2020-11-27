@@ -10,37 +10,37 @@ using System.Linq;
 
 namespace ApiAuto.Controllers
 {
-    [Route("api/Auto")]
+    [Route("api/[controller]")]
     [ApiController]
-    public class AutoController : ControllerBase
+    public class TiempoController : ControllerBase
     {
         private readonly AppBDContext context;
-        public AutoController(AppBDContext context)
+        public TiempoController(AppBDContext context)
         {
             this.context = context;
         }
-        // GET: api/<AutoController>
+        // GET: api/<TiempoController>
         [HttpGet]
-        public IEnumerable<Auto> Get()
+        public IEnumerable<Tiempo> Get()
         {
-            return context.autos.ToList();
+            return context.tiempo.ToList();
         }
 
-        // GET api/<AutoController>/5
+        // GET api/<TiempoController>/5
         [HttpGet("{id}")]
-        public Auto Get(long id)
+        public Tiempo Get(long id)
         {
-            var auto = context.autos.FirstOrDefault(a => a.auto_id == id);
-            return auto;
+            var tiempo = context.tiempo.FirstOrDefault(t => t.tiempo_id == id);
+            return tiempo;
         }
 
-        // POST api/<AutoController>
+        // POST api/<TiempoController>
         [HttpPost]
-        public ActionResult Post([FromBody] Auto auto)
+        public ActionResult Post([FromBody] Tiempo tiempo)
         {
             try
             {
-                context.autos.Add(auto);
+                context.tiempo.Add(tiempo);
                 context.SaveChanges();
                 return Ok();
             }
@@ -50,13 +50,13 @@ namespace ApiAuto.Controllers
             }
         }
 
-        // PUT api/<AutoController>/2
+        // PUT api/<TiempoController>/5
         [HttpPut("{id}")]
-        public ActionResult Put(long id, [FromBody] Auto auto)
+        public ActionResult Put(long id, [FromBody] Tiempo tiempo)
         {
-            if (auto.auto_id == id)
+            if (tiempo.tiempo_id == id)
             {
-                context.Entry(auto).State = EntityState.Modified;
+                context.Entry(tiempo).State = EntityState.Modified;
                 context.SaveChanges();
                 return Ok();
             }
@@ -64,14 +64,14 @@ namespace ApiAuto.Controllers
                 return BadRequest();
         }
 
-        // DELETE api/<AutoController>/5
+        // DELETE api/<TiempoController>/5
         [HttpDelete("{id}")]
         public ActionResult Delete(long id)
         {
-            var auto = context.autos.FirstOrDefault(a => a.auto_id == id);
-            if (auto != null)
+            var tiempo = context.tiempo.FirstOrDefault(t => t.tiempo_id == id);
+            if (tiempo != null)
             {
-                context.autos.Remove(auto);
+                context.tiempo.Remove(tiempo);
                 context.SaveChanges();
                 return Ok();
             }
