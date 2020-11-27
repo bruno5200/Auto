@@ -36,6 +36,7 @@ for c in cnts:
             placa = gray[y:y+h,x:x+w]
             text = pytesseract.image_to_string(placa, config='--psm 12')
             # text = pytesseract.image_to_string(placa, config='--psm 11')
+            r = send(text, image)
             print('text=',text)
             cv2.imshow('placa',placa) 
             cv2.moveWindow('placa',1050,10)
