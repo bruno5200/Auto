@@ -1,6 +1,5 @@
 G:\GIT\Auto\Parking\CapaEntidades\bin\Debug\CapaEntidades.dll
 G:\GIT\Auto\Parking\CapaEntidades\bin\Debug\CapaEntidades.pdb
-G:\GIT\Auto\Parking\CapaEntidades\obj\Debug\CapaEntidades.csprojAssemblyReference.cache
 G:\GIT\Auto\Parking\CapaEntidades\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
 G:\GIT\Auto\Parking\CapaEntidades\obj\Debug\CapaEntidades.dll
 G:\GIT\Auto\Parking\CapaEntidades\obj\Debug\CapaEntidades.pdb

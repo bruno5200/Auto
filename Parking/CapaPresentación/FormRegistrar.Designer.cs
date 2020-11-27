@@ -50,6 +50,7 @@ namespace CapaPresentación
             this.lblCI = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
+            this.btnLoad = new FontAwesome.Sharp.IconButton();
             this.pnlAuto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pibAuto)).BeginInit();
             this.pnlContenido.SuspendLayout();
@@ -58,6 +59,7 @@ namespace CapaPresentación
             // pnlAuto
             // 
             this.pnlAuto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.pnlAuto.Controls.Add(this.btnLoad);
             this.pnlAuto.Controls.Add(this.btnEditarPlaca);
             this.pnlAuto.Controls.Add(this.lblPlaca);
             this.pnlAuto.Controls.Add(this.pibAuto);
@@ -100,9 +102,9 @@ namespace CapaPresentación
             // 
             this.pibAuto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pibAuto.BackColor = System.Drawing.Color.White;
-            this.pibAuto.Location = new System.Drawing.Point(12, 12);
+            this.pibAuto.Location = new System.Drawing.Point(65, 75);
             this.pibAuto.Name = "pibAuto";
-            this.pibAuto.Size = new System.Drawing.Size(525, 525);
+            this.pibAuto.Size = new System.Drawing.Size(472, 462);
             this.pibAuto.TabIndex = 0;
             this.pibAuto.TabStop = false;
             // 
@@ -158,16 +160,20 @@ namespace CapaPresentación
             // txtPlaca
             // 
             this.txtPlaca.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPlaca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.txtPlaca.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPlaca.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtPlaca.Location = new System.Drawing.Point(353, 364);
             this.txtPlaca.Multiline = true;
             this.txtPlaca.Name = "txtPlaca";
-            this.txtPlaca.Size = new System.Drawing.Size(228, 20);
+            this.txtPlaca.Size = new System.Drawing.Size(228, 25);
             this.txtPlaca.TabIndex = 16;
             this.txtPlaca.Visible = false;
             // 
             // btnGuardarVehiculo
             // 
             this.btnGuardarVehiculo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnGuardarVehiculo.Enabled = false;
             this.btnGuardarVehiculo.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
             this.btnGuardarVehiculo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
             this.btnGuardarVehiculo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -179,6 +185,7 @@ namespace CapaPresentación
             this.btnGuardarVehiculo.TabIndex = 6;
             this.btnGuardarVehiculo.Text = "Guardar Vehiculo";
             this.btnGuardarVehiculo.UseVisualStyleBackColor = true;
+            this.btnGuardarVehiculo.Click += new System.EventHandler(this.btnGuardarVehiculo_Click);
             // 
             // lblMatricula
             // 
@@ -207,15 +214,20 @@ namespace CapaPresentación
             this.btnGuardarUsuario.TabIndex = 5;
             this.btnGuardarUsuario.Text = "Guardar Usuario";
             this.btnGuardarUsuario.UseVisualStyleBackColor = true;
+            this.btnGuardarUsuario.Click += new System.EventHandler(this.btnGuardarUsuario_Click);
             // 
             // txtColor
             // 
             this.txtColor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.txtColor.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtColor.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtColor.Location = new System.Drawing.Point(51, 536);
             this.txtColor.Multiline = true;
             this.txtColor.Name = "txtColor";
-            this.txtColor.Size = new System.Drawing.Size(228, 20);
+            this.txtColor.Size = new System.Drawing.Size(228, 25);
             this.txtColor.TabIndex = 12;
+            this.txtColor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtName_KeyPress);
             // 
             // lblColor
             // 
@@ -233,11 +245,15 @@ namespace CapaPresentación
             // txtTipo
             // 
             this.txtTipo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.txtTipo.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTipo.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtTipo.Location = new System.Drawing.Point(51, 448);
             this.txtTipo.Multiline = true;
             this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(228, 20);
+            this.txtTipo.Size = new System.Drawing.Size(228, 25);
             this.txtTipo.TabIndex = 10;
+            this.txtTipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtName_KeyPress);
             // 
             // lblTipo
             // 
@@ -254,11 +270,15 @@ namespace CapaPresentación
             // txtMarca
             // 
             this.txtMarca.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtMarca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.txtMarca.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMarca.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtMarca.Location = new System.Drawing.Point(51, 364);
             this.txtMarca.Multiline = true;
             this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(228, 20);
+            this.txtMarca.Size = new System.Drawing.Size(228, 25);
             this.txtMarca.TabIndex = 8;
+            this.txtMarca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtName_KeyPress);
             // 
             // lbl
             // 
@@ -275,11 +295,15 @@ namespace CapaPresentación
             // txtCI
             // 
             this.txtCI.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.txtCI.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCI.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtCI.Location = new System.Drawing.Point(51, 193);
             this.txtCI.Multiline = true;
             this.txtCI.Name = "txtCI";
-            this.txtCI.Size = new System.Drawing.Size(228, 20);
+            this.txtCI.Size = new System.Drawing.Size(228, 25);
             this.txtCI.TabIndex = 3;
+            this.txtCI.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCI_KeyPress);
             // 
             // lblCI
             // 
@@ -296,11 +320,15 @@ namespace CapaPresentación
             // txtName
             // 
             this.txtName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.txtName.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtName.Location = new System.Drawing.Point(51, 114);
             this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(228, 20);
+            this.txtName.Size = new System.Drawing.Size(228, 25);
             this.txtName.TabIndex = 1;
+            this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtName_KeyPress);
             // 
             // lblName
             // 
@@ -313,6 +341,23 @@ namespace CapaPresentación
             this.lblName.Size = new System.Drawing.Size(85, 23);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Nombre";
+            // 
+            // btnLoad
+            // 
+            this.btnLoad.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.btnLoad.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btnLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoad.IconChar = FontAwesome.Sharp.IconChar.Parking;
+            this.btnLoad.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnLoad.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLoad.Location = new System.Drawing.Point(281, 17);
+            this.btnLoad.Margin = new System.Windows.Forms.Padding(0);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(45, 45);
+            this.btnLoad.TabIndex = 8;
+            this.btnLoad.UseVisualStyleBackColor = false;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // FormRegistrar
             // 
@@ -358,5 +403,6 @@ namespace CapaPresentación
         private System.Windows.Forms.Label lblMatricula;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Label label3;
+        private FontAwesome.Sharp.IconButton btnLoad;
     }
 }

@@ -41,8 +41,8 @@ namespace CapaPresentación
             public static Color color4 = Color.FromArgb(95, 77, 21);
             public static Color color5 = Color.FromArgb(249, 88, 155);
             public static Color color6 = Color.FromArgb(24, 161, 251);
-            //public static Color color7 = Color.FromArgb(127,63,255);
-            //public static Color color8 = Color.FromArgb(255,63,127);
+            public static Color color7 = Color.FromArgb(127,63,255);
+            public static Color color8 = Color.FromArgb(255,63,127);
         }
         //Metodos
         private void ActivateButton(object senderBtn, Color color)
@@ -104,13 +104,18 @@ namespace CapaPresentación
         }
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color2);
+            ActivateButton(sender, RGBColors.color1);
             AbrirFormulario<FormRegistrar>();
         }
         private void btnArchivos_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color1);
+            ActivateButton(sender, RGBColors.color2);
             AbrirFormulario<FormArchivos>();
+        }
+        private void btnActivos_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color3);
+            AbrirFormulario<FormActive>();
         }
         private void pibSABSA_Click(object sender, EventArgs e)
         {
@@ -157,5 +162,7 @@ namespace CapaPresentación
         {
             WindowState = FormWindowState.Minimized;
         }
+
+
     }
 }

@@ -31,17 +31,18 @@ namespace CapaPresentación
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formAuto));
             this.PnlPlaca = new System.Windows.Forms.Panel();
+            this.pnlContenedor = new System.Windows.Forms.Panel();
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.pibSABSA = new FontAwesome.Sharp.IconPictureBox();
             this.btnRegistrar = new FontAwesome.Sharp.IconButton();
             this.btnArchivos = new FontAwesome.Sharp.IconButton();
             this.pnlSuperior = new System.Windows.Forms.Panel();
-            this.pnlContenedor = new System.Windows.Forms.Panel();
-            this.icoform = new FontAwesome.Sharp.IconButton();
-            this.lblShow = new System.Windows.Forms.Label();
-            this.btnClose = new FontAwesome.Sharp.IconButton();
-            this.btnMaximize = new FontAwesome.Sharp.IconButton();
             this.btnMinmize = new FontAwesome.Sharp.IconButton();
+            this.btnMaximize = new FontAwesome.Sharp.IconButton();
+            this.btnClose = new FontAwesome.Sharp.IconButton();
+            this.lblShow = new System.Windows.Forms.Label();
+            this.icoform = new FontAwesome.Sharp.IconButton();
+            this.btnActivos = new FontAwesome.Sharp.IconButton();
             this.PnlPlaca.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pibSABSA)).BeginInit();
@@ -64,8 +65,18 @@ namespace CapaPresentación
             this.PnlPlaca.Size = new System.Drawing.Size(1350, 729);
             this.PnlPlaca.TabIndex = 0;
             // 
+            // pnlContenedor
+            // 
+            this.pnlContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContenedor.Location = new System.Drawing.Point(120, 60);
+            this.pnlContenedor.Name = "pnlContenedor";
+            this.pnlContenedor.Size = new System.Drawing.Size(1230, 669);
+            this.pnlContenedor.TabIndex = 3;
+            // 
             // pnlMenu
             // 
+            this.pnlMenu.Controls.Add(this.btnActivos);
             this.pnlMenu.Controls.Add(this.pibSABSA);
             this.pnlMenu.Controls.Add(this.btnRegistrar);
             this.pnlMenu.Controls.Add(this.btnArchivos);
@@ -100,6 +111,7 @@ namespace CapaPresentación
             // btnRegistrar
             // 
             this.btnRegistrar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnRegistrar.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
             this.btnRegistrar.FlatAppearance.BorderSize = 0;
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.ForeColor = System.Drawing.Color.Gainsboro;
@@ -121,6 +133,7 @@ namespace CapaPresentación
             // btnArchivos
             // 
             this.btnArchivos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnArchivos.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
             this.btnArchivos.FlatAppearance.BorderSize = 0;
             this.btnArchivos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnArchivos.ForeColor = System.Drawing.Color.Gainsboro;
@@ -129,7 +142,7 @@ namespace CapaPresentación
             this.btnArchivos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnArchivos.IconSize = 32;
             this.btnArchivos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnArchivos.Location = new System.Drawing.Point(0, 299);
+            this.btnArchivos.Location = new System.Drawing.Point(0, 295);
             this.btnArchivos.Name = "btnArchivos";
             this.btnArchivos.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.btnArchivos.Size = new System.Drawing.Size(119, 50);
@@ -156,58 +169,23 @@ namespace CapaPresentación
             this.pnlSuperior.TabIndex = 1;
             this.pnlSuperior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlSuperior_MouseDown);
             // 
-            // pnlContenedor
+            // btnMinmize
             // 
-            this.pnlContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContenedor.Location = new System.Drawing.Point(120, 60);
-            this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(1230, 669);
-            this.pnlContenedor.TabIndex = 3;
-            // 
-            // icoform
-            // 
-            this.icoform.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.icoform.CausesValidation = false;
-            this.icoform.FlatAppearance.BorderSize = 0;
-            this.icoform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.icoform.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.icoform.IconColor = System.Drawing.Color.Gainsboro;
-            this.icoform.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.icoform.Location = new System.Drawing.Point(120, 12);
-            this.icoform.Name = "icoform";
-            this.icoform.Size = new System.Drawing.Size(35, 35);
-            this.icoform.TabIndex = 0;
-            this.icoform.UseVisualStyleBackColor = false;
-            // 
-            // lblShow
-            // 
-            this.lblShow.AutoSize = true;
-            this.lblShow.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblShow.Location = new System.Drawing.Point(161, 23);
-            this.lblShow.Name = "lblShow";
-            this.lblShow.Size = new System.Drawing.Size(32, 13);
-            this.lblShow.TabIndex = 1;
-            this.lblShow.Text = "Inicio";
-            this.lblShow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(68)))));
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
-            this.btnClose.IconColor = System.Drawing.Color.DimGray;
-            this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClose.IconSize = 32;
-            this.btnClose.Location = new System.Drawing.Point(1327, 3);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(20, 20);
-            this.btnClose.TabIndex = 5;
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnMinmize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinmize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(68)))));
+            this.btnMinmize.FlatAppearance.BorderSize = 0;
+            this.btnMinmize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnMinmize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinmize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.btnMinmize.IconColor = System.Drawing.Color.DimGray;
+            this.btnMinmize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMinmize.IconSize = 32;
+            this.btnMinmize.Location = new System.Drawing.Point(1281, 3);
+            this.btnMinmize.Name = "btnMinmize";
+            this.btnMinmize.Size = new System.Drawing.Size(20, 20);
+            this.btnMinmize.TabIndex = 7;
+            this.btnMinmize.UseVisualStyleBackColor = false;
+            this.btnMinmize.Click += new System.EventHandler(this.btnMinmize_Click);
             // 
             // btnMaximize
             // 
@@ -227,23 +205,71 @@ namespace CapaPresentación
             this.btnMaximize.UseVisualStyleBackColor = false;
             this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
             // 
-            // btnMinmize
+            // btnClose
             // 
-            this.btnMinmize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinmize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(68)))));
-            this.btnMinmize.FlatAppearance.BorderSize = 0;
-            this.btnMinmize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.btnMinmize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinmize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-            this.btnMinmize.IconColor = System.Drawing.Color.DimGray;
-            this.btnMinmize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMinmize.IconSize = 32;
-            this.btnMinmize.Location = new System.Drawing.Point(1281, 3);
-            this.btnMinmize.Name = "btnMinmize";
-            this.btnMinmize.Size = new System.Drawing.Size(20, 20);
-            this.btnMinmize.TabIndex = 7;
-            this.btnMinmize.UseVisualStyleBackColor = false;
-            this.btnMinmize.Click += new System.EventHandler(this.btnMinmize_Click);
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(68)))));
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
+            this.btnClose.IconColor = System.Drawing.Color.DimGray;
+            this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnClose.IconSize = 32;
+            this.btnClose.Location = new System.Drawing.Point(1327, 3);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(20, 20);
+            this.btnClose.TabIndex = 5;
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // lblShow
+            // 
+            this.lblShow.AutoSize = true;
+            this.lblShow.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblShow.Location = new System.Drawing.Point(161, 23);
+            this.lblShow.Name = "lblShow";
+            this.lblShow.Size = new System.Drawing.Size(32, 13);
+            this.lblShow.TabIndex = 1;
+            this.lblShow.Text = "Inicio";
+            this.lblShow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // icoform
+            // 
+            this.icoform.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.icoform.CausesValidation = false;
+            this.icoform.FlatAppearance.BorderSize = 0;
+            this.icoform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.icoform.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.icoform.IconColor = System.Drawing.Color.Gainsboro;
+            this.icoform.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.icoform.Location = new System.Drawing.Point(120, 12);
+            this.icoform.Name = "icoform";
+            this.icoform.Size = new System.Drawing.Size(35, 35);
+            this.icoform.TabIndex = 0;
+            this.icoform.UseVisualStyleBackColor = false;
+            // 
+            // btnActivos
+            // 
+            this.btnActivos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnActivos.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btnActivos.FlatAppearance.BorderSize = 0;
+            this.btnActivos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActivos.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnActivos.IconChar = FontAwesome.Sharp.IconChar.Car;
+            this.btnActivos.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnActivos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnActivos.IconSize = 32;
+            this.btnActivos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnActivos.Location = new System.Drawing.Point(0, 344);
+            this.btnActivos.Name = "btnActivos";
+            this.btnActivos.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnActivos.Size = new System.Drawing.Size(119, 50);
+            this.btnActivos.TabIndex = 3;
+            this.btnActivos.Text = "Activo";
+            this.btnActivos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnActivos.UseVisualStyleBackColor = true;
+            this.btnActivos.Click += new System.EventHandler(this.btnActivos_Click);
             // 
             // formAuto
             // 
@@ -279,6 +305,7 @@ namespace CapaPresentación
         private FontAwesome.Sharp.IconButton btnClose;
         private FontAwesome.Sharp.IconButton btnMinmize;
         private FontAwesome.Sharp.IconButton btnMaximize;
+        private FontAwesome.Sharp.IconButton btnActivos;
     }
 }
 
