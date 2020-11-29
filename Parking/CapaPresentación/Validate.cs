@@ -95,10 +95,10 @@ namespace CapaPresentación
                 {
                     e.Handled = false;
                 }
-                else if (char.IsSeparator(e.KeyChar))//esta instruccion nos permite poner separadores
-                {
-                    e.Handled = false;
-                }
+                //else if (char.IsSeparator(e.KeyChar))//esta instruccion nos permite poner separadores
+                //{
+                //    e.Handled = false;
+                //}
                 else
                 {
                     e.Handled = true;

@@ -30,6 +30,7 @@ namespace CapaPresentación
         private void InitializeComponent()
         {
             this.pnlAuto = new System.Windows.Forms.Panel();
+            this.btnLoad = new FontAwesome.Sharp.IconButton();
             this.btnEditarPlaca = new FontAwesome.Sharp.IconButton();
             this.lblPlaca = new System.Windows.Forms.Label();
             this.pibAuto = new System.Windows.Forms.PictureBox();
@@ -50,7 +51,6 @@ namespace CapaPresentación
             this.lblCI = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
-            this.btnLoad = new FontAwesome.Sharp.IconButton();
             this.pnlAuto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pibAuto)).BeginInit();
             this.pnlContenido.SuspendLayout();
@@ -68,6 +68,23 @@ namespace CapaPresentación
             this.pnlAuto.Name = "pnlAuto";
             this.pnlAuto.Size = new System.Drawing.Size(615, 630);
             this.pnlAuto.TabIndex = 0;
+            // 
+            // btnLoad
+            // 
+            this.btnLoad.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.btnLoad.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btnLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoad.IconChar = FontAwesome.Sharp.IconChar.Parking;
+            this.btnLoad.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnLoad.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLoad.Location = new System.Drawing.Point(281, 17);
+            this.btnLoad.Margin = new System.Windows.Forms.Padding(0);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(45, 45);
+            this.btnLoad.TabIndex = 8;
+            this.btnLoad.UseVisualStyleBackColor = false;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // btnEditarPlaca
             // 
@@ -92,7 +109,7 @@ namespace CapaPresentación
             this.lblPlaca.AutoSize = true;
             this.lblPlaca.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlaca.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblPlaca.Location = new System.Drawing.Point(230, 563);
+            this.lblPlaca.Location = new System.Drawing.Point(215, 564);
             this.lblPlaca.Name = "lblPlaca";
             this.lblPlaca.Size = new System.Drawing.Size(109, 36);
             this.lblPlaca.TabIndex = 1;
@@ -341,23 +358,6 @@ namespace CapaPresentación
             this.lblName.Size = new System.Drawing.Size(85, 23);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Nombre";
-            // 
-            // btnLoad
-            // 
-            this.btnLoad.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.btnLoad.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.btnLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLoad.IconChar = FontAwesome.Sharp.IconChar.Parking;
-            this.btnLoad.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnLoad.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLoad.Location = new System.Drawing.Point(281, 17);
-            this.btnLoad.Margin = new System.Windows.Forms.Padding(0);
-            this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(45, 45);
-            this.btnLoad.TabIndex = 8;
-            this.btnLoad.UseVisualStyleBackColor = false;
-            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // FormRegistrar
             // 

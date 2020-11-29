@@ -7,3 +7,12 @@ G:\GIT\Auto\Parking\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
 G:\GIT\Auto\Parking\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
 G:\GIT\Auto\Parking\CapaDatos\obj\Debug\CapaDatos.dll
 G:\GIT\Auto\Parking\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaDatos\bin\Debug\CapaEntidades.dll
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaDatos\bin\Debug\CapaEntidades.pdb
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaDatos\obj\Debug\CapaDatos.pdb

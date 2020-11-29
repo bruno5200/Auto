@@ -3,3 +3,9 @@ G:\GIT\Auto\Parking\CapaEntidades\bin\Debug\CapaEntidades.pdb
 G:\GIT\Auto\Parking\CapaEntidades\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
 G:\GIT\Auto\Parking\CapaEntidades\obj\Debug\CapaEntidades.dll
 G:\GIT\Auto\Parking\CapaEntidades\obj\Debug\CapaEntidades.pdb
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaEntidades\bin\Debug\CapaEntidades.dll
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaEntidades\bin\Debug\CapaEntidades.pdb
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaEntidades\obj\Debug\CapaEntidades.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaEntidades\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaEntidades\obj\Debug\CapaEntidades.dll
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaEntidades\obj\Debug\CapaEntidades.pdb

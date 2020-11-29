@@ -14,6 +14,7 @@ namespace CapaNegocio
         public void GuardarTiempo(CE_Time t)
         {
             t.Inicio = DateTime.Now;
+            t.Estado = true;
             TimeCD.AgregarTiempo(t);
         }
     }

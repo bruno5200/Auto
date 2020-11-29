@@ -51,7 +51,7 @@ AS
 GO
 
 CREATE PROC idUser
-@cedula
+@cedula NVARCHAR (12)
 AS
 	SELECT u.usuario_id
 	FROM usuarios AS u
@@ -59,7 +59,7 @@ AS
 GO
 
 CREATE PROC idAuto
-@placa
+@placa NVARCHAR (10)
 AS
 	SELECT a.auto_id
 	FROM autos AS a
@@ -88,7 +88,7 @@ AS
 	INSERT INTO tiempo VALUES (@usuario_id, @auto_id, @inicio, @fin, @estado)
 GO
 
-CREATE PROC AgregarUSuario
+CREATE PROC AgregarUsuario
 	@nombre		NVARCHAR (160),
 	@cedula		NVARCHAR (12)
 AS
@@ -97,6 +97,5 @@ GO
 
 CREATE PROC ObtenerAuto
 AS
-	SELECT TOP 1 a.placa, a.dir, a.auto_id order by a.auto_id desc
-	FROM autos AS a
+	SELECT TOP 1 placa, dir, auto_id FROM autos order by auto_id desc
 GO

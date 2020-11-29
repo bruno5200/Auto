@@ -24,7 +24,7 @@ namespace CapaNegocio
         }
         public DataTable ListarActivos(DataTable activos)
         {
-            activos = AutoCD.ListArchive(activos);
+            activos = AutoCD.ListActive(activos);
             return activos;
         }
         public DataTable ObtenerAuto(DataTable auto)

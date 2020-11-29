@@ -57,6 +57,7 @@ namespace CapaPresentación
                 a.Tipo = txtTipo.Text;
                 a.Color = txtColor.Text;
                 t = AutoCN.GuardarAuto(a, t);
+
                 TimeCN.GuardarTiempo(t);
             }
             catch (Exception ex)
@@ -79,16 +80,20 @@ namespace CapaPresentación
         {
             DataTable auto = new DataTable();
             auto = AutoCN.ObtenerAuto(auto);
-            a.Placa = Convert.ToString(auto.Rows[1]);
-            a.Dir = Convert.ToString(auto.Rows[2]);
-            a.Id = Convert.ToInt64(auto.Rows[3]);
+            foreach (DataRow items in auto.Rows)
+            {
+                a.Placa = Convert.ToString(items[0]);
+                a.Dir = Convert.ToString(items[1]);
+                a.Id = Convert.ToInt64(items[2]);
+            }
             txtPlaca.Text = a.Placa;
-            pibAuto.ImageLocation = "C:Users/jose/Desktop/Auto/AutoOCR" + a.Dir;
+            lblPlaca.Text = txtPlaca.Text;
+            pibAuto.ImageLocation = "C:\\Users\\user\\Desktop\\Proyecto Auto\\Auto\\ProbandoOCR" + a.Dir;
         }
 
         private void txtName_KeyPress(object sender, KeyPressEventArgs e)
         {
-            v.letras(e);
+            v.letrasSeparator(e);
         }
 
         private void txtCI_KeyPress(object sender, KeyPressEventArgs e)

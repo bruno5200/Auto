@@ -23,10 +23,22 @@ namespace CapaDatos
             comando.Parameters.AddWithValue("@tipo", a.Tipo); 
             comando.Parameters.AddWithValue("@color", a.Color);
             comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+            conection.CerrarConexion();
+            t = ObtenerAuto(a, t);
+            return t;
+        }
+        public CE_Time ObtenerAuto(CE_Auto a, CE_Time t)
+        {
+            comando.Connection = conection.AbrirConexion();
             comando.CommandText = "idAuto";
             comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@cedula", a.Placa);
-            t.UsuarioId = Convert.ToInt64(comando.ExecuteReader());
+            comando.Parameters.AddWithValue("@placa", a.Placa);
+            var au = comando.ExecuteReader();
+            foreach (DataRow item in au)
+            {
+                t.AutoId = Convert.ToInt64(item[0]);
+            }
             comando.Parameters.Clear();
             conection.CerrarConexion();
             return t;
@@ -46,6 +58,17 @@ namespace CapaDatos
         {
             comando.Connection = conection.AbrirConexion();
             comando.CommandText = "ListarArchivo";
+            comando.CommandType = CommandType.StoredProcedure;
+            leer = comando.ExecuteReader();
+            archivo.Load(leer);
+            leer.Close();
+            conection.CerrarConexion();
+            return archivo;
+        }
+        public DataTable ListActive(DataTable archivo)
+        {
+            comando.Connection = conection.AbrirConexion();
+            comando.CommandText = "ListarActivos";
             comando.CommandType = CommandType.StoredProcedure;
             leer = comando.ExecuteReader();
             archivo.Load(leer);

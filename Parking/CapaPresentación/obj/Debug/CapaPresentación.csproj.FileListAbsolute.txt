@@ -33,3 +33,24 @@ G:\GIT\Auto\Parking\CapaPresentación\bin\Debug\CapaDatos.pdb
 G:\GIT\Auto\Parking\CapaPresentación\obj\Debug\CapaPresentación.csproj.CopyComplete
 G:\GIT\Auto\Parking\CapaPresentación\obj\Debug\CapaPresentación.exe
 G:\GIT\Auto\Parking\CapaPresentación\obj\Debug\CapaPresentación.pdb
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\bin\Debug\CapaPresentación.exe.config
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\bin\Debug\CapaPresentación.exe
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\bin\Debug\CapaPresentación.pdb
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\bin\Debug\CapaEntidades.dll
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\bin\Debug\CapaNegocio.dll
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\bin\Debug\CapaDatos.dll
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\bin\Debug\CapaEntidades.pdb
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\bin\Debug\CapaNegocio.pdb
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\bin\Debug\CapaDatos.pdb
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\obj\Debug\CapaPresentación.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\obj\Debug\CapaPresentación.FormActive.resources
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\obj\Debug\CapaPresentación.FormArchivos.resources
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\obj\Debug\CapaPresentación.FormRegistrar.resources
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\obj\Debug\CapaPresentación.formAuto.resources
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\obj\Debug\CapaPresentación.Properties.Resources.resources
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\obj\Debug\CapaPresentación.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\obj\Debug\CapaPresentación.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\obj\Debug\CapaPresentación.csproj.CopyComplete
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\obj\Debug\CapaPresentación.exe
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\obj\Debug\CapaPresentación.pdb

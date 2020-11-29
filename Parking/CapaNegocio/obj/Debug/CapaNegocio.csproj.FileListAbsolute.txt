@@ -9,3 +9,14 @@ G:\GIT\Auto\Parking\CapaNegocio\bin\Debug\CapaEntidades.pdb
 G:\GIT\Auto\Parking\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
 G:\GIT\Auto\Parking\CapaNegocio\obj\Debug\CapaNegocio.dll
 G:\GIT\Auto\Parking\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaNegocio\bin\Debug\CapaEntidades.dll
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaNegocio\bin\Debug\CapaEntidades.pdb
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaNegocio\obj\Debug\CapaNegocio.pdb

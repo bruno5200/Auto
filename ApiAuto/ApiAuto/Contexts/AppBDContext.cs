@@ -15,6 +15,6 @@ namespace ApiAuto.Contexts
         }
         public DbSet<Auto> autos { get; set; }
         public DbSet<Tiempo> tiempo { get; set; }
-        public DbSet<Usuario> usuarios { get; set }
+        public DbSet<Usuario> usuarios { get; set; }
     }
 }

@@ -10,7 +10,7 @@ using System.Linq;
 
 namespace ApiAuto.Controllers
 {
-    [Route("api/Auto")]
+    [Route("api/[controller]")]
     [ApiController]
     public class AutoController : ControllerBase
     {
