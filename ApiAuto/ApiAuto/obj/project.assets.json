@@ -5654,19 +5654,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\men52\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\Proyecto Auto\\Auto\\ApiAuto\\ApiAuto\\ApiAuto.csproj",
+      "projectUniqueName": "G:\\GIT\\Auto\\ApiAuto\\ApiAuto\\ApiAuto.csproj",
       "projectName": "ApiAuto",
-      "projectPath": "C:\\Users\\user\\Desktop\\Proyecto Auto\\Auto\\ApiAuto\\ApiAuto\\ApiAuto.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\Proyecto Auto\\Auto\\ApiAuto\\ApiAuto\\obj\\",
+      "projectPath": "G:\\GIT\\Auto\\ApiAuto\\ApiAuto\\ApiAuto.csproj",
+      "packagesPath": "C:\\Users\\men52\\.nuget\\packages\\",
+      "outputPath": "G:\\GIT\\Auto\\ApiAuto\\ApiAuto\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\men52\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

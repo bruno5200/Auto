@@ -6,9 +6,11 @@ namespace ApiAuto.Entities
     {
         [Key]
         public long auto_id { get; set; }
+        [Required]
         public string placa { get; set; }
+        [Required]
         public string dir { get; set; }
-        public string descripcion { get; set; }
+        public string tipo { get; set; }
         public string marca { get; set; }
         public string color { get; set; }
     }

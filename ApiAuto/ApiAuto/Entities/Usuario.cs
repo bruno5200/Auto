@@ -6,7 +6,9 @@ namespace ApiAuto.Entities
     {
         [Key]
         public long usuario_id { get; set; }
+        [Required]
         public string nombre { get; set; }
+        [Required]
         public string cedula { get; set; }
     }
 }
