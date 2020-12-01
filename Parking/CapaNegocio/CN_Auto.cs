@@ -12,10 +12,9 @@ namespace CapaNegocio
     public class CN_Auto
     {
         private CD_Auto AutoCD = new CD_Auto();
-        public CE_Time GuardarAuto(CE_Auto a, CE_Time t)
+        public void GuardarAuto(CE_Auto a)
         {
-            t = AutoCD.ActualizarAuto(a, t);
-            return t;
+           AutoCD.ActualizarAuto(a);
         }
         public DataTable ListarArchivos(DataTable archivo)
         {

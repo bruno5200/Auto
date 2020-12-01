@@ -11,10 +11,9 @@ namespace CapaNegocio
     public class CN_Usuario
     {
         private CD_Usuario UserCD = new CD_Usuario();
-        public CE_Time GuardarUsuario(CE_User u, CE_Time t)
+        public void GuardarUsuario(CE_User u)
         {
-           t = UserCD.AgregarUsuario(u,t);
-            return t;
+           UserCD.AgregarUsuario(u);
         }
     }
 }

@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="CD_Auto.cs" />
     <Compile Include="CD_Conexion.cs" />
+    <Compile Include="CD_Local.cs" />
     <Compile Include="CD_Tiempo.cs" />
     <Compile Include="CD_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

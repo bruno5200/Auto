@@ -5,7 +5,8 @@ namespace CapaDatos
 {
     public class CD_Conexion
     {
-        private SqlConnection Conexion = new SqlConnection("Data Source =.; Initial Catalog =Parking;Integrated Security=True");
+        private SqlConnection Conexion = new SqlConnection("Data Source =DESKTOP-A6RJKSS; Initial Catalog =Parking;Integrated Security=True"); 
+        //private SqlConnection Conexion = new SqlConnection("Data Source =DESKTOP-90C7F1O\\TOBIAS; Initial Catalog =Parking;User ID=sa; Password=Bruno520054;");
         public SqlConnection AbrirConexion()
         { //metodo para abrir la conexion si esta cerrada
             if (Conexion.State == ConnectionState.Closed)//comprobamos el estado de la conexion

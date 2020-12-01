@@ -82,12 +82,11 @@ CREATE PROC AgregarTiempo
 	@usuario_id	BIGINT,
 	@auto_id	BIGINT,
 	@inicio		DATETIME,
-	@fin		DATETIME,
 	@estado		BIT
 AS
-	INSERT INTO tiempo VALUES (@usuario_id, @auto_id, @inicio, @fin, @estado)
+	INSERT INTO tiempo VALUES (@usuario_id, @auto_id, @inicio, NULL, @estado)
 GO
-
+drop proc AgregarTiempo
 CREATE PROC AgregarUsuario
 	@nombre		NVARCHAR (160),
 	@cedula		NVARCHAR (12)
@@ -99,3 +98,16 @@ CREATE PROC ObtenerAuto
 AS
 	SELECT TOP 1 placa, dir, auto_id FROM autos order by auto_id desc
 GO
+select * from usuarios
+select * from autos
+select * from tiempo
+
+TRUNCATE TABLE tiempo
+GO
+drop table tiempo
+GO
+TRUNCATE TABLE usuarios
+TRUNCATE TABLE autos
+
+select @@language
+SET LANGUAGE Español

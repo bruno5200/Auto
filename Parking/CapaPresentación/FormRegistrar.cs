@@ -21,7 +21,7 @@ namespace CapaPresentación
         private CN_Auto AutoCN = new CN_Auto();
         private CN_Usuario UserCN = new CN_Usuario();
         private CN_Tiempo TimeCN = new CN_Tiempo();
-
+        private Exception Err;
         public FormRegistrar()
         {
             InitializeComponent();
@@ -39,7 +39,7 @@ namespace CapaPresentación
             {
                 u.Cedula = txtCI.Text;
                 u.Nombre = txtName.Text;
-                t = UserCN.GuardarUsuario(u, t);
+                UserCN.GuardarUsuario(u);
             }
             catch (Exception ex)
             {
@@ -56,15 +56,16 @@ namespace CapaPresentación
                 a.Marca = txtMarca.Text;
                 a.Tipo = txtTipo.Text;
                 a.Color = txtColor.Text;
-                t = AutoCN.GuardarAuto(a, t);
+                AutoCN.GuardarAuto(a);
 
                 TimeCN.GuardarTiempo(t);
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
-            btnGuardarVehiculo.Enabled = false;
+            if (Err == null)
+                btnGuardarVehiculo.Enabled = false;
         }
         public void DatosUpdate(CE_Auto a, CE_User u)
         {
@@ -88,7 +89,8 @@ namespace CapaPresentación
             }
             txtPlaca.Text = a.Placa;
             lblPlaca.Text = txtPlaca.Text;
-            pibAuto.ImageLocation = "C:\\Users\\user\\Desktop\\Proyecto Auto\\Auto\\ProbandoOCR" + a.Dir;
+            pibAuto.ImageLocation = @"C:\Users\user\Desktop\Proyecto Auto\Auto\ProbandoOCR" + a.Dir; 
+            //pibAuto.ImageLocation = @"G:\GIT\Auto\ProbandoOCR" + a.Dir;
         }
 
         private void txtName_KeyPress(object sender, KeyPressEventArgs e)

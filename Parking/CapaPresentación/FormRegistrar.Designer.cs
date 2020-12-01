@@ -122,6 +122,7 @@ namespace CapaPresentación
             this.pibAuto.Location = new System.Drawing.Point(65, 75);
             this.pibAuto.Name = "pibAuto";
             this.pibAuto.Size = new System.Drawing.Size(472, 462);
+            this.pibAuto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pibAuto.TabIndex = 0;
             this.pibAuto.TabStop = false;
             // 
