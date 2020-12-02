@@ -50,22 +50,6 @@ AS
 	where t.estado = 0
 GO
 
-CREATE PROC idUser
-@cedula NVARCHAR (12)
-AS
-	SELECT u.usuario_id
-	FROM usuarios AS u
-	where @cedula = cedula
-GO
-
-CREATE PROC idAuto
-@placa NVARCHAR (10)
-AS
-	SELECT a.auto_id
-	FROM autos AS a
-	where @placa = placa
-GO
-
 CREATE PROC ActualizarAuto
 	@auto_id	BIGINT,
 	@placa		NVARCHAR (10),
