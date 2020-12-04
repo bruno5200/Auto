@@ -1,0 +1,10 @@
+1. instalar aspnetcore-runtime5.0.0-win-x64.exe (necesario para que funcione la API RESTFULL).
+2. Correr el Script de la Base de Datos utilizando Sql Managemet Studio con el nombre: Parking.sql (creará todas las tablas y procedimientos almacenados).
+3. <Guía del reconocimento de Imagenes>
+4. Abrir la Carpeta API y Ejecutar como administrador "ApiAuto.exe".
+5. <Reconocimeinto de placa del vehiculo>
+6. Abrir la Carpeta Parqueo SABSA y ejecutar como administrador "CapaPresentación.exe", luego hacer click en el menú del lado izquierdo en Registrar.
+7. hacer clic en el Botón con un Simbolo "P" (cargará la imagen del vehículo y la matrícula debajo de la misma).
+8. ingrese los datos de Usuario "Nombres"(nombre completo) y "Cedula" (solo número de carnet), para guardar los datos debe hacer click en el botón Guardar Usuario.
+9. ingrese datos del vehículo "Marca" (ej: Toyota) "Tipo" (ej: Vagoneta) "Color" (ej: Blanco), para guardar los datos debe hacer click en el botón Guardar Auto.
+10. Hacer click en el menú del lado izquierdo en el botón SABSA, posteriormente hacer click en el botón Activo para visualizar el registro del vehiculo y su estado con un checkbox del lado derecho.

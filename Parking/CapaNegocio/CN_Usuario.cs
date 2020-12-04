@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CapaEntidades;
+﻿using CapaEntidades;
 using CapaDatos;
 
 namespace CapaNegocio
@@ -13,7 +8,11 @@ namespace CapaNegocio
         private CD_Usuario UserCD = new CD_Usuario();
         public void GuardarUsuario(CE_User u)
         {
-           UserCD.AgregarUsuario(u);
+            if (u.Nombre != null && u.Cedula != null)
+            {
+                u.Nombre = u.Nombre.ToUpper();
+                UserCD.AgregarUsuario(u);
+            }
         }
     }
 }

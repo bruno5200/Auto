@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using CapaEntidades;
 
 namespace CapaDatos
@@ -23,7 +18,6 @@ namespace CapaDatos
             comando.Parameters.AddWithValue("@usuario_id", t.UsuarioId);
             comando.Parameters.AddWithValue("@auto_id", t.AutoId); 
             comando.Parameters.AddWithValue("@inicio", t.Inicio.ToUniversalTime());
-            //comando.Parameters.AddWithValue("@fin", SqlDbType.DateTime.ToString());
             comando.Parameters.AddWithValue("@estado", t.Estado);
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();

@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using CapaEntidades;
 
 namespace CapaDatos
@@ -12,7 +10,7 @@ namespace CapaDatos
     {
         public void SaveData(CE_Time t)
         {
-            string pathString = @"C:\Data";
+            string pathString = @".\Data";
 
             System.IO.Directory.CreateDirectory(pathString);
 
@@ -31,7 +29,7 @@ namespace CapaDatos
         }
         public CE_Time LoadData(CE_Time t)
         {
-            string pathString = @"C:\Data";
+            string pathString = @".\Data";
 
             string fileName = $"Registro.txt";
 

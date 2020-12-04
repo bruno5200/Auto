@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Data.SqlTypes;
 using System.ComponentModel.DataAnnotations;
+
 
 namespace ApiAuto.Entities
 {

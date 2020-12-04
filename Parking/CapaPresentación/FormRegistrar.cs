@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaNegocio;
 using CapaEntidades;
@@ -21,7 +15,6 @@ namespace CapaPresentación
         private CN_Auto AutoCN = new CN_Auto();
         private CN_Usuario UserCN = new CN_Usuario();
         private CN_Tiempo TimeCN = new CN_Tiempo();
-        private Exception Err;
         public FormRegistrar()
         {
             InitializeComponent();
@@ -43,7 +36,7 @@ namespace CapaPresentación
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
             btnGuardarVehiculo.Enabled = true;
         }
@@ -64,7 +57,6 @@ namespace CapaPresentación
             {
                 MessageBox.Show(ex.Message);
             }
-            if (Err == null)
                 btnGuardarVehiculo.Enabled = false;
         }
         public void DatosUpdate(CE_Auto a, CE_User u)
@@ -79,6 +71,8 @@ namespace CapaPresentación
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
+            try
+            {
             DataTable auto = new DataTable();
             auto = AutoCN.ObtenerAuto(auto);
             foreach (DataRow items in auto.Rows)
@@ -89,8 +83,14 @@ namespace CapaPresentación
             }
             txtPlaca.Text = a.Placa;
             lblPlaca.Text = txtPlaca.Text;
-            pibAuto.ImageLocation = @"C:\Users\user\Desktop\Proyecto Auto\Auto\ProbandoOCR" + a.Dir; 
-            //pibAuto.ImageLocation = @"G:\GIT\Auto\ProbandoOCR" + a.Dir;
+            //pibAuto.ImageLocation @"C:\Users\user\Desktop\Proyecto Auto\Auto\ProbandoOCR\" + a.Dir; 
+            pibAuto.ImageLocation = @".\Data\" + a.Dir;
+            pibAuto.Load();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void txtName_KeyPress(object sender, KeyPressEventArgs e)

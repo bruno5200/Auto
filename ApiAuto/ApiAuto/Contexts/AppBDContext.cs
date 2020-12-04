@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using ApiAuto.Entities;
-using Microsoft;
+﻿using ApiAuto.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiAuto.Contexts

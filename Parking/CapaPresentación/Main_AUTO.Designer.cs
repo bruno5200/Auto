@@ -33,6 +33,7 @@ namespace CapaPresentación
             this.PnlPlaca = new System.Windows.Forms.Panel();
             this.pnlContenedor = new System.Windows.Forms.Panel();
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.btnActivos = new FontAwesome.Sharp.IconButton();
             this.pibSABSA = new FontAwesome.Sharp.IconPictureBox();
             this.btnRegistrar = new FontAwesome.Sharp.IconButton();
             this.btnArchivos = new FontAwesome.Sharp.IconButton();
@@ -42,7 +43,6 @@ namespace CapaPresentación
             this.btnClose = new FontAwesome.Sharp.IconButton();
             this.lblShow = new System.Windows.Forms.Label();
             this.icoform = new FontAwesome.Sharp.IconButton();
-            this.btnActivos = new FontAwesome.Sharp.IconButton();
             this.PnlPlaca.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pibSABSA)).BeginInit();
@@ -85,6 +85,28 @@ namespace CapaPresentación
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(120, 669);
             this.pnlMenu.TabIndex = 2;
+            // 
+            // btnActivos
+            // 
+            this.btnActivos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnActivos.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btnActivos.FlatAppearance.BorderSize = 0;
+            this.btnActivos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActivos.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnActivos.IconChar = FontAwesome.Sharp.IconChar.Car;
+            this.btnActivos.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnActivos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnActivos.IconSize = 32;
+            this.btnActivos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnActivos.Location = new System.Drawing.Point(0, 344);
+            this.btnActivos.Name = "btnActivos";
+            this.btnActivos.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnActivos.Size = new System.Drawing.Size(119, 50);
+            this.btnActivos.TabIndex = 3;
+            this.btnActivos.Text = "Activo";
+            this.btnActivos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnActivos.UseVisualStyleBackColor = true;
+            this.btnActivos.Click += new System.EventHandler(this.btnActivos_Click);
             // 
             // pibSABSA
             // 
@@ -249,38 +271,17 @@ namespace CapaPresentación
             this.icoform.TabIndex = 0;
             this.icoform.UseVisualStyleBackColor = false;
             // 
-            // btnActivos
-            // 
-            this.btnActivos.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnActivos.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.btnActivos.FlatAppearance.BorderSize = 0;
-            this.btnActivos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnActivos.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnActivos.IconChar = FontAwesome.Sharp.IconChar.Car;
-            this.btnActivos.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnActivos.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnActivos.IconSize = 32;
-            this.btnActivos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnActivos.Location = new System.Drawing.Point(0, 344);
-            this.btnActivos.Name = "btnActivos";
-            this.btnActivos.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.btnActivos.Size = new System.Drawing.Size(119, 50);
-            this.btnActivos.TabIndex = 3;
-            this.btnActivos.Text = "Activo";
-            this.btnActivos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnActivos.UseVisualStyleBackColor = true;
-            this.btnActivos.Click += new System.EventHandler(this.btnActivos_Click);
-            // 
             // formAuto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.PnlPlaca);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "formAuto";
             this.Opacity = 0.95D;
-            this.Text = "Form1";
+            this.Text = "Parqueo Sabsa";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.PnlPlaca.ResumeLayout(false);
             this.pnlMenu.ResumeLayout(false);

@@ -153,3 +153,4 @@ G:\GIT\Auto\ApiAuto\ApiAuto\obj\Debug\net5.0\ref\ApiAuto.dll
 G:\GIT\Auto\ApiAuto\ApiAuto\obj\Debug\net5.0\ApiAuto.pdb
 G:\GIT\Auto\ApiAuto\ApiAuto\obj\Debug\net5.0\ApiAuto.genruntimeconfig.cache
 G:\GIT\Auto\ApiAuto\ApiAuto\obj\Debug\net5.0\ApiAuto.csprojAssemblyReference.cache
+H:\Proyectos\ApiAuto\ApiAuto\obj\Debug\net5.0\ApiAuto.csprojAssemblyReference.cache

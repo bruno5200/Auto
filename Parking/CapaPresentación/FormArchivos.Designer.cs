@@ -33,8 +33,8 @@ namespace CapaPresentación
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tblArchivo = new System.Windows.Forms.DataGridView();
             this.pnlName = new System.Windows.Forms.Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.btnClose = new FontAwesome.Sharp.IconButton();
+            this.lblTitle = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tblArchivo)).BeginInit();
             this.pnlName.SuspendLayout();
             this.SuspendLayout();
@@ -44,6 +44,7 @@ namespace CapaPresentación
             this.tblArchivo.AllowUserToAddRows = false;
             this.tblArchivo.AllowUserToDeleteRows = false;
             this.tblArchivo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(92)))));
+            this.tblArchivo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.SteelBlue;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -52,7 +53,7 @@ namespace CapaPresentación
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Gainsboro;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.tblArchivo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.tblArchivo.ColumnHeadersHeight = 20;
+            this.tblArchivo.ColumnHeadersHeight = 25;
             this.tblArchivo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tblArchivo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblArchivo.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(125)))), ((int)(((byte)(154)))));
@@ -80,18 +81,6 @@ namespace CapaPresentación
             this.pnlName.Size = new System.Drawing.Size(1230, 55);
             this.pnlName.TabIndex = 4;
             // 
-            // lblTitle
-            // 
-            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblTitle.Location = new System.Drawing.Point(552, 11);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(127, 32);
-            this.lblTitle.TabIndex = 3;
-            this.lblTitle.Text = "Archivos";
-            // 
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -109,6 +98,18 @@ namespace CapaPresentación
             this.btnClose.TabIndex = 4;
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblTitle.Location = new System.Drawing.Point(552, 11);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(127, 32);
+            this.lblTitle.TabIndex = 3;
+            this.lblTitle.Text = "Archivos";
             // 
             // FormArchivos
             // 

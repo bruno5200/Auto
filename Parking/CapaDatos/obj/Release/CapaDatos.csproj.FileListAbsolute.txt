@@ -1,0 +1,9 @@
+G:\GIT\Auto\Parking\CapaDatos\bin\Release\CapaDatos.dll
+G:\GIT\Auto\Parking\CapaDatos\bin\Release\CapaDatos.pdb
+G:\GIT\Auto\Parking\CapaDatos\bin\Release\CapaEntidades.dll
+G:\GIT\Auto\Parking\CapaDatos\bin\Release\CapaEntidades.pdb
+G:\GIT\Auto\Parking\CapaDatos\obj\Release\CapaDatos.csprojAssemblyReference.cache
+G:\GIT\Auto\Parking\CapaDatos\obj\Release\CapaDatos.csproj.CoreCompileInputs.cache
+G:\GIT\Auto\Parking\CapaDatos\obj\Release\CapaDatos.csproj.CopyComplete
+G:\GIT\Auto\Parking\CapaDatos\obj\Release\CapaDatos.dll
+G:\GIT\Auto\Parking\CapaDatos\obj\Release\CapaDatos.pdb

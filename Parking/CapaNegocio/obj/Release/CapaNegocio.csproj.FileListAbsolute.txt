@@ -1,0 +1,11 @@
+G:\GIT\Auto\Parking\CapaNegocio\bin\Release\CapaNegocio.dll
+G:\GIT\Auto\Parking\CapaNegocio\bin\Release\CapaNegocio.pdb
+G:\GIT\Auto\Parking\CapaNegocio\bin\Release\CapaDatos.dll
+G:\GIT\Auto\Parking\CapaNegocio\bin\Release\CapaEntidades.dll
+G:\GIT\Auto\Parking\CapaNegocio\bin\Release\CapaDatos.pdb
+G:\GIT\Auto\Parking\CapaNegocio\bin\Release\CapaEntidades.pdb
+G:\GIT\Auto\Parking\CapaNegocio\obj\Release\CapaNegocio.csprojAssemblyReference.cache
+G:\GIT\Auto\Parking\CapaNegocio\obj\Release\CapaNegocio.csproj.CoreCompileInputs.cache
+G:\GIT\Auto\Parking\CapaNegocio\obj\Release\CapaNegocio.csproj.CopyComplete
+G:\GIT\Auto\Parking\CapaNegocio\obj\Release\CapaNegocio.dll
+G:\GIT\Auto\Parking\CapaNegocio\obj\Release\CapaNegocio.pdb

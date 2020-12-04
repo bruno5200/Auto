@@ -119,9 +119,9 @@ namespace CapaPresentación
             // 
             this.pibAuto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pibAuto.BackColor = System.Drawing.Color.White;
-            this.pibAuto.Location = new System.Drawing.Point(65, 75);
+            this.pibAuto.Location = new System.Drawing.Point(12, 75);
             this.pibAuto.Name = "pibAuto";
-            this.pibAuto.Size = new System.Drawing.Size(472, 462);
+            this.pibAuto.Size = new System.Drawing.Size(597, 462);
             this.pibAuto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pibAuto.TabIndex = 0;
             this.pibAuto.TabStop = false;
@@ -201,7 +201,7 @@ namespace CapaPresentación
             this.btnGuardarVehiculo.Name = "btnGuardarVehiculo";
             this.btnGuardarVehiculo.Size = new System.Drawing.Size(162, 50);
             this.btnGuardarVehiculo.TabIndex = 6;
-            this.btnGuardarVehiculo.Text = "Guardar Vehiculo";
+            this.btnGuardarVehiculo.Text = "Guardar Vehículo";
             this.btnGuardarVehiculo.UseVisualStyleBackColor = true;
             this.btnGuardarVehiculo.Click += new System.EventHandler(this.btnGuardarVehiculo_Click);
             // 

@@ -54,3 +54,8 @@ C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\obj\Debug\Cap
 C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\obj\Debug\CapaPresentación.csproj.CopyComplete
 C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\obj\Debug\CapaPresentación.exe
 C:\Users\user\Desktop\Proyecto Auto\Auto\Parking\CapaPresentación\obj\Debug\CapaPresentación.pdb
+G:\GIT\Auto\Parking\CapaPresentación\bin\Debug\CapaPresentación.exe.manifest
+G:\GIT\Auto\Parking\CapaPresentación\bin\Debug\CapaPresentación.application
+G:\GIT\Auto\Parking\CapaPresentación\obj\Debug\CapaPresentación.TrustInfo.xml
+G:\GIT\Auto\Parking\CapaPresentación\obj\Debug\CapaPresentación.exe.manifest
+G:\GIT\Auto\Parking\CapaPresentación\obj\Debug\CapaPresentación.application
