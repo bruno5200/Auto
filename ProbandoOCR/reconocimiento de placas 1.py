@@ -24,13 +24,13 @@ for c in cnts:
     area = cv2.contourArea(c)
     
     x,y,w,h = cv2.boundingRect(c)
-    epsilon = 0.09*cv2.arcLength(c, True)
-    approx =cv2.approxPolyDP(c, epsilon,True)
     epsilon = 0.09*cv2.arcLength(c,True)
     approx = cv2.approxPolyDP(c,epsilon,True)
+    #epsilon = 0.09*cv2.arcLength(c,True)
+    #approx = cv2.approxPolyDP(c,epsilon,True)
     if len(approx)==4 and area > 9000:
         print('area=',area)
-        cv2.drawContours(image,[c],0,(0,255,0),2)
+        #cv2.drawContours(image,[c],0,(0,255,0),2)
         aspect_ratio = float(w)/h
         if aspect_ratio>1.3:
             placa = gray[y:y+h,x:x+w]
